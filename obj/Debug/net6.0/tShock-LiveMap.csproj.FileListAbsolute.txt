@@ -11,3 +11,4 @@ C:\Users\FrankV22\source\repos\tShock-LiveMap\obj\Debug\net6.0\tShock-LiveMap.dl
 C:\Users\FrankV22\source\repos\tShock-LiveMap\obj\Debug\net6.0\refint\tShock-LiveMap.dll
 C:\Users\FrankV22\source\repos\tShock-LiveMap\obj\Debug\net6.0\tShock-LiveMap.pdb
 C:\Users\FrankV22\source\repos\tShock-LiveMap\obj\Debug\net6.0\ref\tShock-LiveMap.dll
+C:\Users\FrankV22\source\repos\tShock-LiveMap\obj\Debug\net6.0\tShock-LiveMap.sourcelink.json

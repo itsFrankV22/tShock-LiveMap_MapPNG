@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using ItemDecoration;
+using System.Drawing;
 using Terraria;
 using TerrariaApi.Server;
 using tShock_LiveMap.Colors;
@@ -12,10 +13,7 @@ namespace WorldMapExporter
         public override string Author => "FrankV22";
         public override string Description => "MAP Exporter .png";
         public override string Name => "LiveMap_WorldMapExporter";
-        public override Version Version => new Version(1, 0, 0);
-
-        private static Dictionary<int, Color> tileColors = TileColors.Colors;
-        private static Dictionary<int, Color> wallColors = WallColors.Colors;
+        public override Version Version => new Version(1, 1, 0);
 
         private static System.Timers.Timer mapTimer;
 
@@ -25,12 +23,31 @@ namespace WorldMapExporter
 
         public override void Initialize()
         {
+            ServerApi.Hooks.GamePostInitialize.Register(this, OnPostInitialize);
+
             Commands.ChatCommands.Add(new Command("map.export", GenMap, "genmap"));
 
             mapTimer = new System.Timers.Timer(300000);
             mapTimer.Elapsed += (s, e) => GenMapAuto();
             mapTimer.AutoReset = true;
             mapTimer.Enabled = true;
+
+            Console.WriteLine($"\x1b[106;30;1m {Name} {Version} by {Author} \x1b[0m");
+        }
+
+        private async void OnPostInitialize(EventArgs e)
+        {
+            try
+            {
+                Telemetry.Start(this);
+
+                await CheckUpdates.CheckUpdates.CheckUpdateVerbose(this);
+            }
+            catch (Exception ex)
+            {
+                await Telemetry.Report(ex);
+                TShock.Log.ConsoleError($"[ {Name} ] Error OnPostInitialize: {ex.Message}");
+            }
         }
 
         private void GenMap(CommandArgs args)
@@ -72,31 +89,45 @@ namespace WorldMapExporter
                 {
                     for (int y = 0; y < height; y++)
                     {
-                        ITile tile = Main.tile[x, y];
-                        bmp.SetPixel(x, y, TileToColor(tile, x, y));
+                        Tile tile = Main.tile[x, y] as Terraria.Tile;
+                        if (tile != null)
+                            bmp.SetPixel(x, y, TileToColor(tile, x, y));
                     }
                 }
                 bmp.Save(outputPath, System.Drawing.Imaging.ImageFormat.Png);
             }
             return outputPath;
         }
-
-        private Color TileToColor(ITile tile, int x, int y)
+        private Color TileToColor(Tile tile, int x, int y)
         {
-            if (tile.active() && tileColors.TryGetValue(tile.type, out Color color))
-                return color;
+            byte tilePaint = MapColors.GetPaint(tile);
+            byte wallPaint = MapColors.GetWallPaint(tile);
 
-            if (tile.wall > 0 && wallColors.TryGetValue(tile.wall, out Color wallColor))
-                return wallColor;
+            if (tile.active())
+            {
+                var color = MapColors.GetTileColor(tile.type, tilePaint);
+                if (color.A == 0 && tilePaint != 0)
+                    color = MapColors.GetTileColor(tile.type, 0);
 
-            // Si tiene líquido, usa color de líquido
+                if (color.A > 0)
+                    return color;
+            }
+
+            if (tile.wall > 0)
+            {
+                var wallColor = MapColors.GetWallColor(tile.wall, wallPaint);
+                if (wallColor.A == 0 && wallPaint != 0)
+                    wallColor = MapColors.GetWallColor(tile.wall, 0);
+
+                if (wallColor.A > 0)
+                    return wallColor;
+            }
+
             var liquidColor = MapColorHelper.GetLiquidColor(tile);
             if (liquidColor.A > 0)
                 return liquidColor;
 
-            // Si tile no tiene color y no es pared ni líquido, haz:
             return MapColorHelper.GetHeightGradient(y);
         }
     }
-
 }

@@ -8,6 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\MapColors.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\MapColors.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="TSAPI" Version="5.2.1" />
     <PackageReference Include="TShock" Version="5.2.4" />
   </ItemGroup>
