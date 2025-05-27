@@ -1,0 +1,120 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\FrankV22\\source\\repos\\tShock-LiveMap\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{40D40DC1-9953-467F-A37E-67A9ACBF7C2F}|tShock-LiveMap.csproj|c:\\users\\frankv22\\source\\repos\\tshock-livemap\\colors\\wallcolors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40D40DC1-9953-467F-A37E-67A9ACBF7C2F}|tShock-LiveMap.csproj|solutionrelative:colors\\wallcolors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40D40DC1-9953-467F-A37E-67A9ACBF7C2F}|tShock-LiveMap.csproj|c:\\users\\frankv22\\source\\repos\\tshock-livemap\\colors\\tilecolors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40D40DC1-9953-467F-A37E-67A9ACBF7C2F}|tShock-LiveMap.csproj|solutionrelative:colors\\tilecolors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40D40DC1-9953-467F-A37E-67A9ACBF7C2F}|tShock-LiveMap.csproj|c:\\users\\frankv22\\source\\repos\\tshock-livemap\\colors\\mapcolorhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40D40DC1-9953-467F-A37E-67A9ACBF7C2F}|tShock-LiveMap.csproj|solutionrelative:colors\\mapcolorhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40D40DC1-9953-467F-A37E-67A9ACBF7C2F}|tShock-LiveMap.csproj|c:\\users\\frankv22\\source\\repos\\tshock-livemap\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40D40DC1-9953-467F-A37E-67A9ACBF7C2F}|tShock-LiveMap.csproj|solutionrelative:main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MapColorHelper.cs",
+              "DocumentMoniker": "C:\\Users\\FrankV22\\source\\repos\\tShock-LiveMap\\Colors\\MapColorHelper.cs",
+              "RelativeDocumentMoniker": "Colors\\MapColorHelper.cs",
+              "ToolTip": "C:\\Users\\FrankV22\\source\\repos\\tShock-LiveMap\\Colors\\MapColorHelper.cs",
+              "RelativeToolTip": "Colors\\MapColorHelper.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAADwvykAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T15:08:04.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WallColors.cs",
+              "DocumentMoniker": "C:\\Users\\FrankV22\\source\\repos\\tShock-LiveMap\\Colors\\WallColors.cs",
+              "RelativeDocumentMoniker": "Colors\\WallColors.cs",
+              "ToolTip": "C:\\Users\\FrankV22\\source\\repos\\tShock-LiveMap\\Colors\\WallColors.cs*",
+              "RelativeToolTip": "Colors\\WallColors.cs*",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAswB4AAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T14:30:51.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TileColors.cs",
+              "DocumentMoniker": "C:\\Users\\FrankV22\\source\\repos\\tShock-LiveMap\\Colors\\TileColors.cs",
+              "RelativeDocumentMoniker": "Colors\\TileColors.cs",
+              "ToolTip": "C:\\Users\\FrankV22\\source\\repos\\tShock-LiveMap\\Colors\\TileColors.cs*",
+              "RelativeToolTip": "Colors\\TileColors.cs*",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAIwEAAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T14:15:05.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Main.cs",
+              "DocumentMoniker": "C:\\Users\\FrankV22\\source\\repos\\tShock-LiveMap\\Main.cs",
+              "RelativeDocumentMoniker": "Main.cs",
+              "ToolTip": "C:\\Users\\FrankV22\\source\\repos\\tShock-LiveMap\\Main.cs",
+              "RelativeToolTip": "Main.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAADwv2EAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T12:49:39.541Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
