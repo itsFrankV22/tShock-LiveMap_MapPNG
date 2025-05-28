@@ -10,7 +10,7 @@ Genera un mapa en PNG de tu mundo Terraria usando tShock: una visualización sen
 - El comando `/genmap` crea el archivo en `/Map/worldMap.png`.
 - El mapa muestra tiles, muros y líquidos usando colores según tipo, pintura y altura.
 - Soporta generación manual (comando) y automática cada 5 minutos.
-- Incluye comprobación automática de actualizaciones y telemetría opcional.
+- Incluye comprobación automática de actualizaciones, telemetría opcional y una nueva RESTapi para exponer el mapa en base64.
 
 ## ¿Cómo funciona?
 
@@ -42,6 +42,9 @@ EJEMPLOS:
 - **CheckUpdates.cs**: Al iniciar verifica si hay versiones nuevas y avisa en la consola.
 - **Telemetry.cs**: Envía información básica del servidor/plugin a un endpoint externo para estadísticas y reporte de errores.
   - Puedes revisar el código para adaptar o desactivar la telemetría si lo deseas.
+- **RESTapi.cs**: Expone endpoints REST para:
+  - `/map/base64`: Devuelve el mapa PNG actual codificado en base64 (requiere permiso `tshock.rest.map`).
+  - `/map/report`: Permite reportar errores manualmente a la telemetría.
 
 ## Instalación (última versión de tShock)
 
@@ -53,6 +56,8 @@ EJEMPLOS:
 ## Permisos
 
 - El comando `/genmap` requiere permiso `map.export`.
+- El endpoint REST `/map/base64` requiere permiso `tshock.rest.map`.
+- El endpoint `/map/report` requiere permiso `tshock.rest.admin`.
 
 ## Ejemplo de uso
 
@@ -66,6 +71,7 @@ El mapa se guardará como `/Map/worldMap.png` en la raíz del servidor.
 - [Main.cs](https://github.com/itsFrankV22/tShock-LiveMap_MapPNG/blob/main/Main.cs): Lógica principal de generación y comandos.
 - [CheckUpdates.cs](https://github.com/itsFrankV22/tShock-LiveMap_MapPNG/blob/main/CheckUpdates.cs): Verificación de actualizaciones.
 - [Telemetry.cs](https://github.com/itsFrankV22/tShock-LiveMap_MapPNG/blob/main/Telemetry.cs): Telemetría y reportes automáticos.
+- [RESTapi.cs](https://github.com/itsFrankV22/tShock-LiveMap_MapPNG/blob/main/RESTapi.cs): RESTapi para exponer el mapa y telemetría.
 
 ## Aportaciones
 
