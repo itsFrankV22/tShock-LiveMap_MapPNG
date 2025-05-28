@@ -1,0 +1,14 @@
+C:\Users\FrankV22\source\repos\tShock-LiveMap\bin\Release\net6.0\HttpServer.dll
+C:\Users\FrankV22\source\repos\tShock-LiveMap\bin\Release\net6.0\tShock-LiveMap.deps.json
+C:\Users\FrankV22\source\repos\tShock-LiveMap\bin\Release\net6.0\tShock-LiveMap.dll
+C:\Users\FrankV22\source\repos\tShock-LiveMap\bin\Release\net6.0\tShock-LiveMap.pdb
+C:\Users\FrankV22\source\repos\tShock-LiveMap\obj\Release\net6.0\tShock-LiveMap.csproj.AssemblyReference.cache
+C:\Users\FrankV22\source\repos\tShock-LiveMap\obj\Release\net6.0\tShock-LiveMap.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\FrankV22\source\repos\tShock-LiveMap\obj\Release\net6.0\tShock-LiveMap.AssemblyInfoInputs.cache
+C:\Users\FrankV22\source\repos\tShock-LiveMap\obj\Release\net6.0\tShock-LiveMap.AssemblyInfo.cs
+C:\Users\FrankV22\source\repos\tShock-LiveMap\obj\Release\net6.0\tShock-LiveMap.csproj.CoreCompileInputs.cache
+C:\Users\FrankV22\source\repos\tShock-LiveMap\obj\Release\net6.0\tShock-LiveMap.sourcelink.json
+C:\Users\FrankV22\source\repos\tShock-LiveMap\obj\Release\net6.0\tShock-LiveMap.dll
+C:\Users\FrankV22\source\repos\tShock-LiveMap\obj\Release\net6.0\refint\tShock-LiveMap.dll
+C:\Users\FrankV22\source\repos\tShock-LiveMap\obj\Release\net6.0\tShock-LiveMap.pdb
+C:\Users\FrankV22\source\repos\tShock-LiveMap\obj\Release\net6.0\ref\tShock-LiveMap.dll

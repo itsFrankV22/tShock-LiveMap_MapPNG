@@ -17,7 +17,7 @@ namespace WorldMapExporter
         public override string Author => "FrankV22";
         public override string Description => "MAP Exporter .png";
         public override string Name => "LiveMap_WorldMapExporter";
-        public override Version Version => new Version(1, 1, 0);
+        public override Version Version => new Version(1, 2, 0);
 
         private static System.Timers.Timer mapTimer;
 
