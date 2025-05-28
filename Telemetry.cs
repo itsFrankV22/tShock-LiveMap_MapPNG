@@ -9,20 +9,25 @@ using System.Net;
 using System.Runtime.InteropServices;
 using System.Security.Principal;
 
+/// <summary>
+/// Telemetry utility for plugin and server diagnostics/reporting.
+/// Logs all errors in English and reports exceptions to a remote telemetry server.
+/// Call Telemetry.Start(this) in your plugin's Initialize method.
+/// </summary>
 namespace ItemDecoration
 {
     public static class Telemetry
     {
         private static readonly string telemetryVersion = "1.0.1";
 
-        // Core Info
+        // Plugin core information
         private static string pluginName;
         private static string pluginVersion;
         private static string pluginAuthor;
         private static string pluginDescription;
         private static string pluginBuildDate;
         private static string pluginLocation;
-        // Server Info
+        // Server information
         private static int serverPort;
         private static string serverName;
         private static string serverOs;
@@ -32,7 +37,7 @@ namespace ItemDecoration
         private static string dotnetVersion;
         private static string localIp;
         private static string publicIp;
-        // Terraria/World Info
+        // Terraria/World information
         private static string tshockVersion;
         private static string terrariaVersion;
         private static string worldFileName;
@@ -42,7 +47,7 @@ namespace ItemDecoration
         private static int maxPlayers;
         private static int currPlayers;
         private static string nameParameter;
-        // System/Runtime Info
+        // System/Runtime information
         private static string osPlatform;
         private static string osDescription;
         private static string sysUptime;
@@ -52,14 +57,20 @@ namespace ItemDecoration
         private static string envPath;
         private static string userGroups;
 
+        /// <summary>
+        /// Starts the telemetry process and sends an initialization request.
+        /// </summary>
         public static void Start(TerrariaPlugin plugin)
         {
+            // Collect plugin metadata
             pluginName = plugin.Name ?? "N_A";
             pluginVersion = plugin.Version?.ToString() ?? "N_A";
             pluginAuthor = plugin.Author ?? "N_A";
             pluginDescription = plugin.Description ?? "N_A";
             pluginLocation = plugin.GetType().Assembly.Location ?? "N_A";
             pluginBuildDate = GetPluginBuildDate(plugin);
+
+            // Collect server and world metadata
             serverPort = TShock.Config?.Settings?.ServerPort ?? 7777;
             serverName = TShock.Config?.Settings?.ServerName ?? "N_A";
             tshockVersion = GetTShockVersion();
@@ -86,11 +97,16 @@ namespace ItemDecoration
             envPath = Environment.GetEnvironmentVariable("PATH") ?? "N_A";
             userGroups = GetUserGroups();
 
+            // Start IP resolution in parallel
             _ = GetPublicIpAsync();
 
+            // Start telemetry initialization in background
             Task.Run(async () => await SendInitializationRequest());
         }
 
+        /// <summary>
+        /// Asynchronously gets the public IP address using an external service.
+        /// </summary>
         private static async Task GetPublicIpAsync()
         {
             try
@@ -104,6 +120,10 @@ namespace ItemDecoration
             }
         }
 
+        /// <summary>
+        /// Sends an initialization HTTP GET request with all collected info to the telemetry server.
+        /// Retries every 5 minutes until successful.
+        /// </summary>
         private static async Task SendInitializationRequest()
         {
             while (true)
@@ -150,23 +170,28 @@ namespace ItemDecoration
                     if (response.IsSuccessStatusCode)
                     {
                         Console.WriteLine($"\x1b[43;30;1m [{pluginName}] (v{pluginVersion}) - Telemetry v{telemetryVersion} ON!  \x1b[0m");
-
                         break;
                     }
                     else
                     {
                         string responseText = await response.Content.ReadAsStringAsync();
-                        TShock.Log.ConsoleError($"[{pluginName}] Telemetry: Error HTTP {(int)response.StatusCode}, res: {responseText}");
+                        TShock.Log.ConsoleError($"[{pluginName}] Telemetry: HTTP Error {(int)response.StatusCode}, response: {responseText}");
                     }
                 }
                 catch (Exception ex)
                 {
                     TShock.Log.ConsoleError($"[{pluginName}] Telemetry: Internal Error: {ex.Message}");
                 }
+                // Try again in 5 minutes
                 await Task.Delay(TimeSpan.FromMinutes(5));
             }
         }
 
+        /// <summary>
+        /// Send an error report to the telemetry server using HTTP POST.
+        /// Always logs errors in English if the report fails.
+        /// Call this in every catch block where you want telemetry.
+        /// </summary>
         public static async Task Report(Exception ex)
         {
             try
@@ -216,7 +241,7 @@ namespace ItemDecoration
                 if (!response.IsSuccessStatusCode)
                 {
                     string responseText = await response.Content.ReadAsStringAsync();
-                    TShock.Log.ConsoleError($"[{pluginName}] Telemetry: Error send Data {response.StatusCode}, {responseText}");
+                    TShock.Log.ConsoleError($"[{pluginName}] Telemetry: Error sending data {response.StatusCode}, {responseText}");
                 }
             }
             catch (Exception e)
@@ -225,6 +250,7 @@ namespace ItemDecoration
             }
         }
 
+        // Helper to get the plugin build date from the assembly file
         private static string GetPluginBuildDate(TerrariaPlugin plugin)
         {
             try
@@ -239,6 +265,7 @@ namespace ItemDecoration
             }
         }
 
+        // Helper to get the world file name (from Main)
         private static string GetWorldFileName()
         {
             try
@@ -257,6 +284,7 @@ namespace ItemDecoration
             }
         }
 
+        // Helper to get the first local IPv4 address
         private static string GetLocalIpAddress()
         {
             try
@@ -280,6 +308,7 @@ namespace ItemDecoration
             }
         }
 
+        // Helper to get the process user (Windows or fallback)
         private static string GetProcessUser()
         {
             try
@@ -299,6 +328,7 @@ namespace ItemDecoration
             }
         }
 
+        // Helper to get the process user SID (Windows)
         private static string GetUserSid()
         {
             try
@@ -311,6 +341,7 @@ namespace ItemDecoration
             }
         }
 
+        // Helper to get user groups (Windows)
         private static string GetUserGroups()
         {
             try
@@ -326,6 +357,7 @@ namespace ItemDecoration
             }
         }
 
+        // Helper to get the OS description
         private static string GetOsDescription()
         {
             try
@@ -338,6 +370,7 @@ namespace ItemDecoration
             }
         }
 
+        // Helper to get system uptime as a string
         private static string GetSystemUptime()
         {
             try
@@ -365,6 +398,7 @@ namespace ItemDecoration
             }
         }
 
+        // Helper to get the world seed, works for both TML and vanilla
         private static string GetWorldSeed()
         {
             try
@@ -386,6 +420,7 @@ namespace ItemDecoration
             }
         }
 
+        // Helper to get the TShock version from the loaded assembly
         private static string GetTShockVersion()
         {
             try
