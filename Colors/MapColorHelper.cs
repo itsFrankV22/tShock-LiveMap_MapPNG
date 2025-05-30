@@ -5,74 +5,82 @@ namespace tShock_LiveMap.Colors
 {
     public static class MapColorHelper
     {
-        public static int SpaceLayer => 0; // Empieza desde arriba, y=0
-        public static int SkyLayer => (int)(Main.worldSurface * 0.45); // Capa cielo (aprox)
-        public static int SurfaceLayer => (int)Main.worldSurface; // Superficie real
-        public static int UndergroundLayer => (int)Main.rockLayer; // Cueva
-        public static int HellLayer => Main.maxTilesY - 200; // Inframundo
+        // World layer constants (World Y coordinate ranges)
+        public static int SpaceLayer => 0; // Top of the world (y=0)
+        public static int SkyLayer => (int)(Main.worldSurface * 0.45); // Sky layer
+        public static int SurfaceLayer => (int)Main.worldSurface; // Actual surface
+        public static int UndergroundLayer => (int)Main.rockLayer; // Cave layer
+        public static int HellLayer => Main.maxTilesY - 200; // Underworld
 
+        /// <summary>
+        /// Returns a color gradient based on height (y coordinate).
+        /// </summary>
         public static Color GetHeightGradient(int y)
         {
             int maxY = Main.maxTilesY - 1;
 
-            // Espacio exterior
+            // Space
             if (y <= SkyLayer)
             {
                 float t = InverseLerp(SpaceLayer, SkyLayer, y);
-                // De azul oscuro a celeste tenue
+                // Dark blue to light sky blue
                 return LerpColor(Color.FromArgb(45, 56, 120), Color.FromArgb(130, 190, 255), t);
             }
-            // Cielo alto
+            // High Sky
             else if (y <= SurfaceLayer)
             {
                 float t = InverseLerp(SkyLayer, SurfaceLayer, y);
-                // De celeste a verde claro (cielo a césped)
+                // Sky blue to light green (sky to grass)
                 return LerpColor(Color.FromArgb(130, 190, 255), Color.FromArgb(110, 214, 97), t);
             }
-            // Superficie/interior (césped a tierra)
+            // Surface/Interior (grass to dirt)
             else if (y <= UndergroundLayer)
             {
                 float t = InverseLerp(SurfaceLayer, UndergroundLayer, y);
-                // De verde claro a marrón claro
+                // Light green to light brown
                 return LerpColor(Color.FromArgb(110, 214, 97), Color.FromArgb(151, 107, 75), t);
             }
-            // Subsuelo/cueva
+            // Underground/Cave
             else if (y < HellLayer)
             {
                 float t = InverseLerp(UndergroundLayer, HellLayer, y);
-                // De marrón claro a gris oscuro
+                // Light brown to dark gray
                 return LerpColor(Color.FromArgb(151, 107, 75), Color.FromArgb(80, 80, 100), t);
             }
-            // Inframundo
+            // Underworld
             else
             {
                 float t = InverseLerp(HellLayer, maxY, y);
-                // De gris oscuro a rojo volcánico
+                // Dark gray to volcanic red
                 return LerpColor(Color.FromArgb(80, 80, 100), Color.FromArgb(170, 50, 35), t);
             }
         }
 
+        /// <summary>
+        /// Returns a color for liquid tiles.
+        /// </summary>
         public static Color GetLiquidColor(ITile tile)
         {
             if (tile.liquid == 0) return Color.Transparent;
 
             switch (tile.liquidType())
             {
-                case 0: // Agua
-                    return Color.FromArgb(120, 65, 125, 255); // Azul agua translúcido
+                case 0: // Water
+                    return Color.FromArgb(120, 65, 125, 255); // Translucent blue water
                 case 1: // Lava
-                    return Color.FromArgb(170, 255, 80, 24); // Lava naranja translúcido
-                case 2: // Miel
-                    return Color.FromArgb(180, 220, 180, 70); // Miel dorada translúcida
+                    return Color.FromArgb(170, 255, 80, 24); // Translucent orange lava
+                case 2: // Honey
+                    return Color.FromArgb(180, 220, 180, 70); // Translucent honey
                 case 3: // Shimmer (Terraria 1.4.4+)
-                    return Color.FromArgb(160, 170, 100, 255); // Shimmer: lila-azulado translúcido
-
+                    return Color.FromArgb(160, 170, 100, 255); // Translucent blue-purple shimmer
                 default:
                     return Color.Transparent;
             }
         }
 
-        // Interpolación lineal de colores (lerp)
+        /// <summary>
+        /// Linear color interpolation (lerp) between c1 and c2.
+        /// </summary>
         public static Color LerpColor(Color c1, Color c2, float t)
         {
             t = Math.Clamp(t, 0f, 1f);
@@ -84,7 +92,9 @@ namespace tShock_LiveMap.Colors
             );
         }
 
-        // Lerp auxiliar
+        /// <summary>
+        /// Returns the normalized t value for v between a and b.
+        /// </summary>
         public static float InverseLerp(float a, float b, float v)
         {
             if (a == b) return 0f;

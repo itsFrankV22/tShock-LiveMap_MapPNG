@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("tShock-LiveMap")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cf0dd56785e524059ba9a1e33f6ac421794205fb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ae5f48644a21382e82e834735d81b20668901dc7")]
 [assembly: System.Reflection.AssemblyProductAttribute("tShock-LiveMap")]
 [assembly: System.Reflection.AssemblyTitleAttribute("tShock-LiveMap")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

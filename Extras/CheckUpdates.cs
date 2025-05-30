@@ -1,9 +1,8 @@
 ﻿using Newtonsoft.Json;
 using TerrariaApi.Server;
 using TShockAPI;
-using ItemDecoration; // Import telemetry for error reporting
 
-namespace CheckUpdates
+namespace tShock_LiveMap.Extras
 {
     /// <summary>
     /// Provides update checking utilities for the plugin, including GitHub release version checking.

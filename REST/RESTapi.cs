@@ -1,8 +1,8 @@
 ﻿using TShockAPI;
 using Rests;
-using ItemDecoration; // Import the Telemetry namespace
+using tShock_LiveMap.Extras;
 
-namespace WorldMapExporter
+namespace tShock_LiveMap.REST
 {
     /// <summary>
     /// Provides REST API endpoints for the WorldMapExporter plugin.
@@ -52,7 +52,7 @@ namespace WorldMapExporter
                 // If the file doesn't exist, return an error response.
                 if (!File.Exists(mapPath))
                 {
-                    return new { success = false, error = "Map image not found." };
+                    return new { success = false, error = "Map image not found. try /genmap" };
                 }
 
                 // Read the image file as bytes and convert it to a base64 string.

